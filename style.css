@@ -14,9 +14,9 @@ html {
     margin: 0;
     padding: 0;
   }
-.container-D{
+.container{
     margin:auto;
-    width: 1110px;
+    width: 1320px;
 }
 .img {
     width: 100%;
@@ -36,7 +36,8 @@ nav{
 }
 .header-line{
     display: flex;
-    width: 1807px;
+    background-color: #272727;
+    align-items: center;
     margin: auto;
 }
 .header-text h2{
@@ -62,10 +63,7 @@ nav{
 nav ul li:hover > ul{
     display: initial;
 }
-.header-line{
-    background-color: #272727;
-    align-items: center;
-}
+ 
 .header-line .container-D{
     display:flex;
     justify-content: space-between;
@@ -75,11 +73,15 @@ nav ul li:hover > ul{
 }
 .main-list{
     display: flex;
-    width: 30%;
+    margin: 0;
+    padding: 0;
+    
     justify-content: space-between;
 }
 .main-list li{ 
      position: relative; 
+     margin-right: 30px;
+
 }
 .main-list li .main-bottom{
     display: block;
@@ -109,8 +111,9 @@ nav ul li:hover > ul{
 .header-text{ 
     padding-left: 13px;
     padding-bottom: 13px;
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+     
     border-left: 2px solid #FCD54C;
     border-bottom: 2px solid #FCD54C;
 }
@@ -145,8 +148,7 @@ nav ul li:hover > ul{
     width: 100%;
     height: 971px;
 }
-.intro-content{
-    width: calc(100% - 118px);
+.intro-content{ 
     margin: auto;
     height: 100%;
     display: flex;
