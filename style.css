@@ -142,7 +142,7 @@ nav ul li:hover > ul{
   text-transform: uppercase;
   background-color: #FCD54C;
 }
- 
+
 .number{
     font-style: normal;
    font-weight: 600;
@@ -186,8 +186,19 @@ nav ul li:hover > ul{
     justify-content: flex-start;
     flex-direction: column;
     width: 714px;
-    border-left: 4px solid #FCD54C;
-    border-bottom: 4px solid #FCD54C;
+    position: relative;
+    padding: 50px 20px;
+     
+}
+.intro-title::after{
+    content:".";
+    width: 125px;
+    height: 100%;
+    border: 3px solid #FCD54C;
+    border-right-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .intro-title-main{
     font-family: 'Space Grotesk, sans-serif';
@@ -328,27 +339,65 @@ main{
 .projects-button:hover{
     color: #FCD54C;
 }
-#examples{
-    width: 1807px;
+#projects{ 
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding-bottom: 70px;
 }
-.example-img{
+.projects-item{
     width: calc((100% - 60px)/4);
+    position: relative;
+    height: 572px;
 }
-.colored{
+.projects-image, .projects-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.projects-info{
     background-color: #FCD54C; 
-}
-.colored-container{
     padding: 46px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    visibility: hidden; 
 }
-.colored-title{
+.projects-item.out .projects-info{
+    animation: a-projects-image .5s ease-out  backwards; 
+}
+.projects-item.out .projects-image{
+    animation: a-projects-image .5s ease-in 0.5s backwards reverse; 
+}
+@keyframes projects-image {
+    from {
+        transform: rotateY(0deg);
+        visibility: visible; 
+    }
+    to {
+        transform: rotateY(90deg);
+        visibility: hidden;
+    }
+}
+@keyframes a-projects-image {
+    from {
+        transform: rotateY(0deg);
+        visibility: visible; 
+    }
+    to {
+        transform: rotateY(90deg);
+        visibility: hidden;
+    }
+}
+ 
+.projects-item:hover .projects-image{
+    animation: projects-image .5s ease-out forwards; 
+}
+.projects-item:hover .projects-info{
+    animation: projects-image .5s ease-in .5s forwards reverse;
+}
+.projects-title{
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
@@ -356,7 +405,7 @@ main{
     line-height: 45px; 
     color: #272727;
 }
-.colored-text{
+.projects-text{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -364,7 +413,7 @@ main{
     line-height: 26px; 
     color: #272727; 
 }
-.colored-bottom{
+.projects-item-button{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
