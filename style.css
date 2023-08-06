@@ -54,6 +54,8 @@ nav{
    color: #b0a1a1;
 }
 .buy-list{
+    border: 0.6px solid #fcd54c54;
+    top: 32px;
     padding-left: 0;
     position: absolute;
     left:0;
@@ -65,7 +67,7 @@ nav{
     border-bottom: 1px solid #FCD54C;
     width: 100%;
 }
-nav ul li:hover > ul{
+nav ul li:focus-within > ul{
     display: initial;
 }
  
@@ -280,6 +282,7 @@ span{
     right: 15px;
 }*/
 .intro-content .mas-media{
+    align-items: center;
     position: absolute;
     top: 141px;
     right: 15px;
@@ -393,9 +396,11 @@ main{
  
 .projects-item:hover .projects-image{
     animation: projects-image .5s ease-out forwards; 
+    
 }
 .projects-item:hover .projects-info{
     animation: projects-image .5s ease-in .5s forwards reverse;
+    height: 572px;
 }
 .projects-title{
     font-family: 'Gilroy';
@@ -730,6 +735,7 @@ main{
     height: 100%;
     padding-top: 95px; 
     padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -995,5 +1001,173 @@ footer{
 .accordion-button:not(.collapsed) svg {
      
     transform: rotate(-180deg);
+}
+@media (max-width: 1399.98px) {
+    .container {
+        max-width: 1140px;
+        padding: 0;
+      }
+      .header-text h2 {
+        font-size: 20px;
+        line-height: 20px;
+        color: white;
+    }
+    .header-text h3 {
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .header-text {
+        padding-left: 9px;
+        padding-bottom: 5px;
+        margin-top: 9px;
+    }
+    .main-list li .main-bottom {
+        display: block;
+        font-size: 10px;
+    }
+    .button {
+        width: 175px;
+        height: 33px;
+        font-size: 11px;
+        line-height: 33px;
+    }
+    .intro-title-up {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .intro-title-main {
+        font-size: 85px;
+       line-height: 94px;
+    }
+    .intro-title-under {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .intro-title {
+        padding: 30px 20px;
+    }
+    #header-bottom {
+        height: 110px;
+    }
+    .number-f {
+        margin-right: 24px;
+        font-size: 53px;
+        line-height: 55px;
+    }
+    .number-info {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .number- {
+        width: calc((100% - 197px)/3);
+    }
+    #latest-projects .container{
+        padding: 0;
+    }
+    .latest-projects-title h3 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .projects-button {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .latest-projects-buttons .hh {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .projects-item {
+        height: 403px;
+    }
+    .projects-item:hover .projects-info{
+        height: 403px;
+    }
+    #our-expertise .container{
+        padding: 0;
+    }
+    #our-expertise div h4 {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    #our-expertise div h2 {
+        font-size: 56px;
+        line-height: 70px;
+    }
+    .description {
+        width: 55%;
+    }
+    .video-img {
+        height: 682.08px;
+    }
+    .quote p {
+        margin-bottom: 0;
+        padding: 53px 69px;
+        font-size: 26px;
+        line-height: 45px;
+    }
+    .form-text p {
+        font-size: 85px;
+        line-height: 85px;
+
+    }
+    .form-item input[type="email"] {
+        width: 290px;
+        height: 47px;
+        padding-left: 32px;
+    }
+    .form-item input[type="submit"] {
+        width: 134px;
+        height: 47px;
+    }
+    .articles-title h3 {
+        font-size: 54px;
+        line-height: 70px;
+    }
+    .articles-button {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .founder {
+        height: 274px;
+    }
+    .founder-img {
+        margin-top: -52px;
+        width: 104px;
+        height: 104px;
+    }
+    .QA-title {
+        font-size: 53px;
+        line-height: 56px;
+    }
+    .accordion-item .accordion-button {
+        font-size: 15px;
+        line-height: 15px;
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+    .accordion-body {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .accordion-item .accordion-button svg {
+        width: 1rem;
+        height: 1.2rem;
+    }
+    .footer-title {
+        padding-left: 9px;
+        padding-bottom: 5px;
+    }
+    .footer-title h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .footer-title h4 {
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .media-image svg{
+        width: 18px;
+        height: 18px;
+    }
 }
 
